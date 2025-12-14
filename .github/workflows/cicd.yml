@@ -28,7 +28,7 @@ jobs:
 
 
       - name: Push Docker image to Docker Hub
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/my-node-app:latest
+        run: docker push my-node-app:latest
 
       - name: Done
         run: echo "Docker Image pushed to Docker Hub!"
